@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fa.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calender</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calender-box">
+            <div class="calender">
+                <div class="header">
+                    <div class="heading">
+                        <h2 class="mx-1">
+                            <span class="month"></span>
+                            <span class="year"></span>
+                        </h2>
+                    </div>
+                    <div class="switch">
+                        <span id="left"><i class="fa-solid fa-less-than"></i></span>
+                        <span id="right"><i class="fa-solid fa-greater-than"></i></span>
+                    </div>
+                    <div class="weekdays mt-4 w-100"></div>
+                    <div class="monthdays w-100" data-num="1">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task-container disable">
+            <div class="task-box">
+                <div class="top-bar">
+                    <h3 class="task-date">...</h3>
+                    <span class="close">
+                        <i class="fa-solid fa-xmark btn close-btn"></i>
+                    </span>
+                </div>
+                <div class="task-input">
+                    <form>
+                        <input type="text" class="form-control new-task" placeholder="add a new task">
+                        <button class="btn btn-primary add-btn">add</button>
+                    </form>
+                </div>
+                <div class="tasks">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
